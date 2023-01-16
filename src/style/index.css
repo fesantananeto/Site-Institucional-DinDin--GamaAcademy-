@@ -1,0 +1,187 @@
+section {
+    height: 100vh;
+
+}
+
+#section1{
+    padding: 6% 10% 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#section1 h1{
+    width: 488px;
+
+    font-size: 60px;
+    color: #FF4081;
+    margin-bottom: 20px;
+
+}
+#section1 p{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#section1 a{
+    color: #FF4081;
+    
+    text-align: center;
+    font-size: 28px;
+
+    border: 2px solid #FF4081;
+
+    border-radius: 62px;
+
+    padding: 10px 30px; 
+   
+    
+}
+
+#section2, #section4{
+    background-color: #F6F6F6;
+}
+
+#section2{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec2divs{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    
+
+}
+
+.sec2divs img{
+    height: 270px;
+    margin-bottom: 20px;
+}
+
+.sec2divs h3{
+    color: #FF4081;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.sec2divs p{
+    width: 294px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    
+}
+
+.sec2divs a{
+    color:#fff;
+    font-size: 20px;
+
+    background-color: #FF4081 ;
+    padding: 10px 40px;
+    border-radius: 62px;
+    
+    
+}
+
+#section3 {
+  flex-direction: column;
+  
+    
+}
+
+#section3 h2, #section4 h2 {
+    color: #009688;
+    font-size: 37px;
+    font-weight: 700;
+    
+}
+
+#section3 h2{
+    
+    margin: 10% 14% 6%;
+}
+
+#comments{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sec3divs{
+    display: flex;
+    margin-bottom: 86px;
+}
+
+
+.sec3divs p {
+    font-size: 18px;
+    font-weight: 300;
+    
+    width: 363px;
+    
+
+    margin: 0px 10px 10px;
+
+}
+
+.sec3divs strong {
+    font-size: 18px;
+    font-weight: 500;
+   
+    margin-left: 10px;
+
+}
+
+#section4{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#section4 h2 {
+    margin: 10%;
+}
+
+#posts {
+    display: flex ;
+   
+    align-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+#posts h3{
+    color:#009688;
+    font-size: 27px ;
+    font-weight: 700;
+}
+
+#posts p{
+    width: 319px;
+
+    font-size: 17px ;
+    
+}
+
+#section4 a{
+    text-align: center;
+    color: #FF4081; 
+    
+    font-size: 25px;
+
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+
+    padding: 10px 50px;
+}
+
+#sec4button {
+    display: flex;
+    justify-content: center;
+}
