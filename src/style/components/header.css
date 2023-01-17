@@ -1,5 +1,5 @@
 header{
-    height: 118px;
+    height: 16vh;
     background-color: #2E948A ;
 
     display: flex;
@@ -13,10 +13,43 @@ header{
 
     position: relative;
 }
+#menu{
+    display: none;
+    font-size:  4vh;
+    color:#fff;
+    position: relative;    
+    
+}
+header img{
+    height: 10vh;
+}
 
 header nav a{
     color: #fff;
     font-size: 20px;
     font-weight: 700;
     margin: 10px
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #menu{
+        display: block;
+    }
+
+    header nav{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    #menu{
+        display: block;
+        font-size:  6vh;
+    }
+
+    header nav{
+        display: none;
+    }
 }

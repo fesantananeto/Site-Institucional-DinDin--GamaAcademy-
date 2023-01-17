@@ -18,5 +18,13 @@ a{
 }
 
 :root {
+    /* Colors */
+    --primary-color: #009688;
+    --secondary-color: #FF4081;
+    --bg-color: #F6F6F6;
 
+    /* Font-Sizes */
+    --title: 3.75rem;
+    --subtitle: ;
+    --bt-border-radius: 3.875rem;
 }

@@ -14,21 +14,21 @@ section {
 #section1 h1{
     width: 488px;
 
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #FF4081;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
 }
 #section1 p{
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
 }
 
 #section1 a{
     color: #FF4081;
     
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75rem;
 
     border: 2px solid #FF4081;
 
@@ -50,46 +50,7 @@ section {
     justify-content: space-evenly;
 }
 
-.sec2divs{
-    display: flex;
-    flex-direction: column;
 
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    
-
-}
-
-.sec2divs img{
-    height: 270px;
-    margin-bottom: 20px;
-}
-
-.sec2divs h3{
-    color: #FF4081;
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-.sec2divs p{
-    width: 294px;
-    font-size: 17px;
-    margin-bottom: 20px;
-    
-}
-
-.sec2divs a{
-    color:#fff;
-    font-size: 20px;
-
-    background-color: #FF4081 ;
-    padding: 10px 40px;
-    border-radius: 62px;
-    
-    
-}
 
 #section3 {
   flex-direction: column;
