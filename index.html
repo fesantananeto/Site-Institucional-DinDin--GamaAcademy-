@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8c90673169.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./src/script/mobile-menu.js"></script>
     <link rel="stylesheet" href="./src/style/components/header.css">
     <link rel="stylesheet" href="./src/style/components/footer.css">
     <link rel="stylesheet" href="./src/style/components/courses.css">
     <link rel="stylesheet" href="./src/style/global.css">
     <link rel="stylesheet" href="./src/style/index.css">
+	
 
     <title>Inicio - dindin</title>
 </head>
@@ -26,69 +28,83 @@
         <div>
             <a href="#"><img src="./assets/images/logo-header.png" alt="logo da dindin educação financeira"></a>
         </div>
-        <i id="menu" class="fa-solid fa-bars"></i>
-        <nav>
+        <i id="menu" onclick="display()" class="fa-solid fa-bars"></i>
+        <nav id="list">
+			
             <a href="#">CURSOS</a>
             <a href="#">BLOG</a>
             <a href="./src/screens/contact/index.html">CONTATO</a>
+			
         </nav>
     </header>
 
     <section id="section1">
-        <div>
+        <div id="sec1div">
             <h1>Educação Financeira <br>é tudo de bom</h1>
+            <img id="banner-mobile" src="./assets/images/ilustra-banner.png" alt="">
             <p>Vem comigo que te mostro <br>por onde começar</p>
-            <a href="#">quero saber mais</a>
+            <a href="#"><button>quero saber mais</button></a>
         </div>
         <div>
-            <img src="./assets/images/ilustra-banner.png" alt="">
+            <img id="banner" src="./assets/images/ilustra-banner.png" alt="">
         </div>
     </section>
-    <section id="section2">
+    <section class="container">
         <div class="courses">
             <img src="./assets/images/ilustra-poupando.png" alt="">
             <h3>Investimento para iniciantes</h3>
             <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit es se cillum dolore eu fugiat nulla pariatur.
-            </p>
-            <a href="#">começar agora</a>
+				Descubra tudo o que você precisa para entrar no mundo dos investimentos e ser bem sucedido. 
+                           </p>
+            <a href="#"><button>começar agora</button></a>
         </div>
         <div class="courses">
             <img src="./assets/images/ilustra-investimento.png" alt="">
             <h3>Poupando e Rendendo</h3>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit es se cillum dolore eu fugiat nulla pariatur.
+            <p>	
+				Aprenda os fundamentos essênciais para poupar e ver seu dinheiro render de forma segura.
             </p>
-            <a href="#">começar agora</a>
+            <a href="#"><button>começar agora</button></a>
         </div>
         <div class="courses">
             <img src="./assets/images/ilustra-independencia.png" alt="">
             <h3>Independência Financeira</h3>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit es se cillum dolore eu fugiat nulla pariatur.
+            <p>	
+				Saiba como conquistar a tão sonhada independência financeira de forma simples e objetiva.  
             </p>
-            <a href="#">começar agora</a>
+            <a href="#"><button>começar agora</button></a>
         </div>
+		
     </section>
+
     <section id="section3">
         <h2>O QUE FALAM SOBRE NÓS</h2>
-        <div id="comments">
+        <div class="comments">
             <div>
                 <div class="sec3divs">
                     <img src="./assets/images/icon-wally.png" alt="">
                     <div>
-                        <p>”Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.”</p>
-                        <strong>Wally, 25</strong>
+                        <p>	
+							”Conteúdo muito bom pra quem está começando do mundo dos investimentos e também pra quem quer aprender
+							mais sobre educação financeira.”
+						</p>
+                        
+                            <p id="name1">Wally, 25</p>
+                       
                     </div>
 
                 </div>
                 <div class="sec3divs">
                     <img src="./assets/images/icon-whoopi.png" alt="">
                     <div>
-                        <p>”Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.”</p>
-                        <strong>Whoopi Goldberg, 37</strong>
+                        <p >
+							”Muito show! Já tava querendo começar a investir faz um tempo e não sabia por onde começar, mas agora
+							posso até dar aula pros meus amigos rsrs”
+						</p>
+                        <div>
+                            <p id="name1">Whoopi Goldberg, 37</p>
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -97,18 +113,27 @@
                 <div class="sec3divs">
                     <img src="./assets/images/icon-jaden.png" alt="">
                     <div>
-                        <p>”Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.”</p>
-                        <strong>Jaden Smith, 23</strong>
+                        <p>
+						”Ótimo conteúdo, vai muito além daquelas básicos e razos que não acrescentam em nada. Aqui você realmente”
+						aprende os fundamentos de forma sólida”</p>
+                        <div>
+                            <p id="name1">Jaden Smith, 23</p>
+                        </div>
+                        
                     </div>
 
                 </div>
                 <div class="sec3divs">
                     <img src="./assets/images/icon-jane.png" alt="">
                     <div>
-                        <p>”Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.”</p>
-                        <strong>Janes Joplin, 29</strong>
+                        <p class="name">
+							”Aprender coisas novas é sempre bom e ainda mais se tiver relação sobre como usar melhor nosso money.
+							Parabéns, o conteúdo é bem rico e objetivo.”
+						</p>
+                        <div>
+                            <p id="name1">Janes Joplin, 29</p>
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -116,25 +141,30 @@
         </div>
 
     </section>
+
     <section id="section4">
         <h2>MAIS CONTEÚDO PARA VOCÊ</h2>
-        <div id="posts">
-            <div>
-                <h3>Itaque earum rerum</h3>
-                <P>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</P>
+        <div class="posts">
+            <div class="sec4divs">
+                <img src="./assets/images/como-administrar-seu-dinheiro.jpg">
+                <h3>Como Administrar seu Dinheiro</h3>
+                <P>O salário entrou e não sabe direito o que fazer? Então, vamos às dicas de como administrar seu dinheiro com mais inteligência!</P>
             </div>
-            <div>
-                <h3>Itaque earum rerum</h3>
-                <P>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</P>
+            <div class="sec4divs">
+                <img src="./assets/images/investimentos-tradicionais.jpg">
+                <h3>Investimentos Tradicionais</h3>
+                <P>Os investimentos tradicionais são as aplicações disponíveis no mercado financeiro e que podem se encaixar na categoria de renda fixa ou renda variável.</P>
             </div>
-            <div>
-                <h3>Itaque earum rerum</h3>
-                <P>hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</P>
+            <div class="sec4divs">
+                <img src="./assets/images/fundo-imobiliario.jpg">
+                <h3>Conheça o Fundo Imobiliario</h3>
+                <P>Quem pretende começar a investir em fundos imobiliários com certeza já se perguntou quais os melhores fundos imobiliários para iniciantes.</P>
             </div>
         </div>
-        <div id="sec4button">
-            <a href="#">ver todos os posts</a>
-        </div>
+        
+            <a href="#"><button id="sec4button">ver todos os posts</button></a>
+        
+        
     </section>
     <footer>
         <div>
@@ -146,10 +176,11 @@
             <a href="./src/screens/contact/index.html">contato</a>
         </div>
 
-        <div id="buttons" class="footerlinks">
-            <a href="#">quero ser prof</a>
-            <a href="#">outro link</a>
+        <div class="footerlinks">
+            <a href="#"><button>quero ser prof</button></a>
+            <a href="#"><button>outro link</button></a>
         </div>
     </footer>
+
 </body>
 </html>

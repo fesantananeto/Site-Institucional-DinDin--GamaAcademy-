@@ -13,20 +13,29 @@ section {
 	position: relative;
 }
 
+#sec1div{
+    width: 100%;
+    height: 100%;
+    
+}
 #section1 h1{
-    width: 488px;
-
+   
     font-size: 3.75rem;
     color: #FF4081;
     margin-bottom: 1.25rem;
 	
 }
+
+#banner-mobile{
+    display: none;
+}
+
 #section1 p{
     font-size: 1.75rem;
     margin-bottom: 1.25rem;
 }
 
-#section1 a{
+#section1 button{
     color: #FF4081;
     
     text-align: center;
@@ -37,25 +46,19 @@ section {
     border-radius: 62px;
 
     padding: 10px 30px; 
+    
+    cursor: pointer;
    
     
 }
 
-#section2, #section4{
-    background-color: #F6F6F6;
+
+#banner{
+    width: 30vw;
 }
-
-#section2{
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-
 
 #section3 {
-  flex-direction: column;
+  padding: 8%;
   
     
 }
@@ -64,24 +67,24 @@ section {
     color: #009688;
     font-size: 37px;
     font-weight: 700;
-    
+    margin-bottom: 10%;
 }
 
-#section3 h2{
-    
-    margin: 10% 14% 6%;
-}
 
-#comments{
+.comments{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .sec3divs{
+    width: 100%;
     display: flex;
     margin-bottom: 86px;
 }
 
+.sec3divs img{
+    width: 8rem;
+}
 
 .sec3divs p {
     font-size: 18px;
@@ -94,45 +97,55 @@ section {
 
 }
 
-.sec3divs strong {
+#name1 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bolder;
    
     margin-left: 10px;
 
 }
 
 #section4{
+	background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 8%;
+}
+
+.sec4divs {
+    width: 25%;
     
 }
 
-#section4 h2 {
-    margin: 10%;
-}
-
-#posts {
+.posts {
     display: flex ;
    
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 100px;
 }
-#posts h3{
+
+.posts img{
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+.posts h3{
     color:#009688;
     font-size: 27px ;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
-#posts p{
-    width: 319px;
-
+.posts p{
+    
+    text-align: justify;
     font-size: 17px ;
     
 }
 
-#section4 a{
+#section4 button {
     text-align: center;
     color: #FF4081; 
     
@@ -142,9 +155,587 @@ section {
     border-radius: 62px;
 
     padding: 10px 50px;
+
+    margin: 0 auto;
+
+    cursor: pointer;
 }
 
-#sec4button {
-    display: flex;
-    justify-content: center;
+
+
+@media (max-width: 768px) {    
+   
+   
+    #section1{
+        padding: 0; 
+    }
+
+    #sec1div {
+    margin: 20%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+        
+
+
+    }
+    #sec1div h1{
+        text-align: center;
+        font-size: 2.75rem;
+        margin-bottom: 1.25rem;
+
+        
+    }
+
+    #banner-mobile{
+        width: 80vw;
+        display: block;
+        margin-bottom: 3rem;
+    
+    }
+    #section1 p{
+       
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #sec1div button{
+        
+        margin: 0 auto;
+    }
+    
+    #banner {
+        display: none;
+    }
+    
+    #section3 {
+      padding: 12%;
+      
+    }
+    
+    #section3 h2, #section4 h2 {
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 10%;
+        
+    }
+    
+    
+    .comments{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec3divs{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 86px;
+       
+    }
+
+    .sec3divs img{
+        width: 8rem;
+        margin-bottom: 10%;
+    }
+    
+    
+    .sec3divs p {
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    
+    
+    #section4{
+       
+        padding-bottom: 20% ;
+    }
+      
+
+    
+    .posts {
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .posts img{
+        
+        margin-bottom: 1.2rem;
+    }
+    .posts h3{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    
+    .sec4divs {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    
 }
+
+@media (max-width: 920px) {           
+
+@media (max-width: 768px) {    
+   
+   
+    #section1{
+        padding: 0; 
+    }
+
+    #sec1div {
+    margin: 20%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+        
+
+
+    }
+    #sec1div h1{
+        text-align: center;
+        font-size: 2.75rem;
+        margin-bottom: 1.25rem;
+
+        
+    }
+
+    #banner-mobile{
+        width: 80vw;
+        display: block;
+        margin-bottom: 3rem;
+    
+    }
+    #section1 p{
+       
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #sec1div button{
+        
+        margin: 0 auto;
+    }
+    
+    #banner {
+        display: none;
+    }
+    
+    #section3 {
+      padding: 12%;
+      
+    }
+    
+    #section3 h2, #section4 h2 {
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 10%;
+        
+    }
+    
+    
+    .comments{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec3divs{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 86px;
+       
+    }
+
+    .sec3divs img{
+        width: 8rem;
+        margin-bottom: 10%;
+    }
+    
+    
+    .sec3divs p {
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    
+    
+    #section4{
+       
+        padding-bottom: 20% ;
+    }
+      
+
+    
+    .posts {
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .posts img{
+        
+        margin-bottom: 1.2rem;
+    }
+    .posts h3{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    
+    .sec4divs {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    
+}
+
+@media (max-width: 768px) {    
+   
+   
+    #section1{
+        padding: 0; 
+    }
+
+    #sec1div {
+    margin: 20%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+        
+
+
+    }
+    #sec1div h1{
+        text-align: center;
+        font-size: 2.75rem;
+        margin-bottom: 1.25rem;
+
+        
+    }
+
+    #banner-mobile{
+        width: 80vw;
+        display: block;
+        margin-bottom: 3rem;
+    
+    }
+    #section1 p{
+       
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #sec1div button{
+        
+        margin: 0 auto;
+    }
+    
+    #banner {
+        display: none;
+    }
+    
+    #section3 {
+      padding: 12%;
+      
+    }
+    
+    #section3 h2, #section4 h2 {
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 10%;
+        
+    }
+    
+    
+    .comments{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec3divs{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 86px;
+       
+    }
+
+    .sec3divs img{
+        width: 8rem;
+        margin-bottom: 10%;
+    }
+    
+    
+    .sec3divs p {
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    
+    
+    #section4{
+       
+        padding-bottom: 20% ;
+    }
+      
+
+    
+    .posts {
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .posts img{
+        
+        margin-bottom: 1.2rem;
+    }
+    .posts h3{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    
+    .sec4divs {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    
+}
+
+@media (max-width: 768px) {    
+   
+   
+    #section1{
+        padding: 0; 
+    }
+
+    #sec1div {
+    margin: 20%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+        
+
+
+    }
+    #sec1div h1{
+        text-align: center;
+        font-size: 2.75rem;
+        margin-bottom: 1.25rem;
+
+        
+    }
+
+    #banner-mobile{
+        width: 80vw;
+        display: block;
+        margin-bottom: 3rem;
+    
+    }
+    #section1 p{
+       
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #sec1div button{
+        
+        margin: 0 auto;
+    }
+    
+    #banner {
+        display: none;
+    }
+    
+    #section3 {
+      padding: 12%;
+      
+    }
+    
+    #section3 h2, #section4 h2 {
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 10%;
+        
+    }
+    
+    
+    .comments{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec3divs{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 86px;
+       
+    }
+
+    .sec3divs img{
+        width: 8rem;
+        margin-bottom: 10%;
+    }
+    
+    
+    .sec3divs p {
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    
+    
+    #section4{
+       
+        padding-bottom: 20% ;
+    }
+      
+
+    
+    .posts {
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .posts img{
+        
+        margin-bottom: 1.2rem;
+    }
+    .posts h3{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    
+    .sec4divs {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    
+}
+
+@media (max-width: 920px) {    
+   
+   
+    #section1{
+        padding: 0; 
+    }
+
+    #sec1div {
+    margin: 20%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+        
+
+
+    }
+    #sec1div h1{
+        text-align: center;
+        font-size: 3.3rem;
+        margin-bottom: 1.25rem;
+
+        
+    }
+
+    #banner-mobile{
+        width: 80vw;
+        display: block;
+        margin-bottom: 3rem;
+    
+    }
+    #section1 p{
+       
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    
+    #sec1div button{
+        
+        margin: 0 auto;
+    }
+    
+    #banner {
+        display: none;
+    }
+    
+    #section3 {
+      padding: 12%;
+      
+    }
+    
+    #section3 h2, #section4 h2 {
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 10%;
+        
+    }
+    
+    
+    .comments{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sec3divs{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 86px;
+       
+    }
+
+    .sec3divs img{
+        width: 8rem;
+        margin-bottom: 10%;
+    }
+    
+    
+    .sec3divs p {
+        text-align: center;
+        margin-bottom: 5%;
+        
+    }
+    
+    
+    #section4{
+       
+        padding-bottom: 20% ;
+    }
+      
+
+    
+    .posts {
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .posts img{
+        
+        margin-bottom: 1.2rem;
+    }
+    .posts h3{
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    
+    .sec4divs {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    
+} 
+
+
+              
+
+
+             
+
+
+   
+   
