@@ -23,11 +23,11 @@ header{
 header img{
     height: 10vh;
 }
-nav{
+header nav{
 	display: flex;
 }
 
-nav{
+header nav{
 	display: flex;
 }
 header nav a{
@@ -43,32 +43,9 @@ header nav a{
 	
 }
 
-@media (max-width: 480px) {
-	nav {
-		position: absolute;
-		top: 16vh;
-		right: 0;
-		width: 100vw;
-		height: 84vh;
-		background: #2E948A;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		transform: translateX(100%);
-		transition: transform 0.4s ease-in;
-		z-index: 1000;
-		
-		}
-		
-    #menu{
-        display: block;
-    }
-
-}
-
 @media (max-width: 768px) {
 	
-	nav {
+	header nav {
 		position: absolute;
 		top: 16vh;
 		right: 0;
@@ -89,6 +66,13 @@ header nav a{
         font-size:  6vh;
     }
 
+}
+
+@media (max-width: 480px) {
+		
+    #menu{
+        display: block;
+    }
 }
 
 

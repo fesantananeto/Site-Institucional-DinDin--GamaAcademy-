@@ -1,14 +1,24 @@
 .container{
 	width: 100vw;
+	
+	min-height: 100vh;
+	height: auto;
+	
 	background-color: #F6F6F6;
 	display: flex;
 	 
     align-items: center;
     justify-content: space-around;
 	
+	overflow-y: hidden;
+	
 	
 }
 
+.container h1{
+	text-align: center;
+	
+}
 
 .courses{
     display: flex;
@@ -54,37 +64,6 @@
     
 }
 
-@media (max-width: 480px) {
-	
-	.container{
-	
-	
-	justify-content: left;
-		
-	position: relative;
-	overflow: auto;
-	scroll-snap-type: x mandatory;
-
-
-	}
-	
-    .courses{
-		
-		width: 100vw;
-        height: 80vh;
-        margin: 0;
-			
-		position: sticky;
-		scroll-behavior: smooth;
-		flex-shrink: 0;
-		transition: 400ms;
-		
-	}
-    
-
-}
-
-
 @media (max-width: 960px) {
 	
 	.container{
@@ -110,4 +89,29 @@
 		transition: 400ms;
 
     }
+}
+
+@media (max-height: 480px) {
+	
+.container{
+	
+	flex-direction: column;
+	overflow-x: hidden;	
+	
+}
+
+.container h1{
+	text-align: center;
+	margin-bottom: 20;
+	
+}
+ .courses{	
+    margin: 10% ;
+		
+    }
+ .courses img{
+    height: 50vh;
+   
+}
+
 }
