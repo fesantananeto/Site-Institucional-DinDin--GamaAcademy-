@@ -1,0 +1,59 @@
+button {
+    text-align: center;
+    border-radius: 62px;
+    cursor: pointer;
+}
+
+.index button {
+    color: #FF4081;
+    background: none;
+    
+    font-size: 1.75rem;
+    border: 2px solid #FF4081;
+    padding: 10px 50px; 
+    
+    
+}
+
+
+.courses button{
+    color:#fff;
+    font-size: 1.25rem;
+
+    background-color: #FF4081 ;
+    padding: 0.625rem 2.5rem;
+    border: 0;    
+}
+
+footer button {
+	width: 13rem;
+    color: #fff;
+	background-color: rgba(0,0,0,0);
+    margin: 4px;
+    padding: 10px 0px;
+
+    border: 2px solid #fff;
+}
+
+@media (max-width: 768px){
+   
+	footer button{
+		width: 11rem ;
+	}
+}
+
+@media (max-width: 480px){
+  
+footer button {
+    width: 10rem;
+}
+
+}
+
+.modal button {
+    font-size: 18px;
+    background-color: #c4c4c4;
+    padding: 0.625rem 2rem;
+    border: 0;
+
+}

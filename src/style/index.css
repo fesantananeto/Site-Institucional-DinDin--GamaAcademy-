@@ -32,20 +32,6 @@ section {
     margin-bottom: 1.25rem;
 }
 
-#section1 button{
-    color: #FF4081;
-    background: none;
-    text-align: center;
-    font-size: 1.75rem;
-
-    border: 2px solid #FF4081;
-    border-radius: 62px;
-    padding: 10px 30px; 
-    
-    cursor: pointer;
-}
-
-
 #banner{
     width: 30vw;
 }
@@ -129,19 +115,6 @@ section {
     font-size: 17px ; 
 }
 
-#section4 button {
-    text-align: center;
-    color: #FF4081; 
-    background: none;
-    font-size: 25px;
-
-    border: 2px solid #FF4081;
-    border-radius: 62px;
-    padding: 10px 50px;
-    margin: 0 auto;
-	
-    cursor: pointer;
-}
 
 @media (max-width: 920px) {    
    

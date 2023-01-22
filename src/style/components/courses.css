@@ -51,19 +51,6 @@
     
 }
 
-.courses button{
-    color:#fff;
-    font-size: 1.25rem;
-
-    background-color: #FF4081 ;
-    padding: 0.625rem 2.5rem;
-    border-radius: 3.875rem;
-    border: 0;
-
-    cursor: pointer;
-    
-}
-
 @media (max-width: 960px) {
 	
 	.container{
