@@ -12,6 +12,7 @@
 	<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/8c90673169.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="../../script/mobile-menu.js"></script>
+	<script type="text/javascript" src="../../script/modal.js"></script>
 	<link rel="stylesheet" href="../../style/components/header.css">
 	<link rel="stylesheet" href="../../style/components/footer.css">
 	<link rel="stylesheet" href="../../style/components/courses.css">
@@ -23,10 +24,6 @@
 </head>
 
 <body>
-	<div class="modal-container">
-		<div class="modal">
-		</div>
-	</div>
 	<header>
 		<div>
 			<a href="../../../index.html"><img src="../../../assets/images/logo-header.png"
@@ -35,7 +32,7 @@
 		<i id="menu" onclick="display()" class="fa-solid fa-bars"></i>
 		<nav id="list">
 			<a href="#">CURSOS</a>
-			<a href="#">BLOG</a>
+			<a href="#" onclick>BLOG</a>
 			<a href="../contact/index.html">CONTATO</a>
 		</nav>
 	</header>
@@ -125,9 +122,9 @@
 				<img src="../../../assets/images/ilustra-poupando.png" alt="">
 				<h3>Investimento para iniciantes</h3>
 				<p>
-					Descubra tudo o que você precisa para entrar no mundo dos investimentos e ser bem sucedido financeiramente. 
+					Descubra tudo o que você precisa para entrar no mundo dos investimentos e ser bem sucedido. 
 							   </p>
-				<a href="#"><button>começar agora</button></a>
+				<!--a href="#"--><button onclick=" OpenModal1()">começar agora</button><!--/a-->
 			</div>
 			<div class="courses">
 				<img src="../../../assets/images/ilustra-investimento.png" alt="">
@@ -135,7 +132,7 @@
 				<p>	
 					Aprenda os fundamentos essênciais para poupar e ver seu dinheiro render de forma segura.
 				</p>
-				<a href="#"><button>começar agora</button></a>
+				<!--a href="#"--><button onclick="OpenModal2()">começar agora</button><!--/a-->
 			</div>
 			<div class="courses">
 				<img src="../../../assets/images/ilustra-independencia.png" alt="">
@@ -143,7 +140,7 @@
 				<p>	
 					Saiba como conquistar a tão sonhada independência financeira de forma simples e objetiva.  
 				</p>
-				<a href="#"><button>começar agora</button></a>
+				<!--a href="#"--><button onclick="OpenModal3()">começar agora</button><!--/a-->
 			</div>
 			
 		</div>
@@ -167,6 +164,32 @@
 		</div>
 
 	</footer>
+	
+	<!-- Modal-->
+	
+	<div id="modal" class="modal-container">
+		<div class="modal">
+			<div id="exit">
+			<img onclick="CloseModal()" id="close" src="../../../assets/images/modal-exit.png">
+			</div>
+			<div id="content">
+				<img id="mimg" src="">
+			<div>
+				<h3 id="mh3"></h3>
+				<p id="mp"></p>
+				<ul>
+					<li id="ml1"></li>
+					<li id="ml2"></li>
+					<li id="ml3"></li>
+				</ul>
+				<div>
+				<p id="mprof"></p>
+				<a href="#"><button>Link das aulas</button></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
