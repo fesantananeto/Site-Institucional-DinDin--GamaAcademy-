@@ -9,6 +9,7 @@
 			document.getElementById('ml2').textContent="2 - História sobre investimento"
 			document.getElementById('ml3').textContent="3 - Por onde começar"
 			document.getElementById('mprof').textContent="Professor: Jane Doe"
+			document.getElementById('link').href="../course/index.html"
 			
 			
            
@@ -24,6 +25,8 @@
 			document.getElementById('ml2').textContent="2 - História sobre a poupança"
 			document.getElementById('ml3').textContent="3 - Passo a passo"
 			document.getElementById('mprof').textContent="Professor: Jack Richman"
+			document.getElementById('link').href="../course/index.html"
+
            
         }
 		
@@ -38,7 +41,7 @@ function OpenModal3() {
 			document.getElementById('ml2').textContent="2 - Dicas de saúde financeira"
 			document.getElementById('ml3').textContent="3 - Conquistando a Independência Finânceira"
 			document.getElementById('mprof').textContent="Professor: Ernest G. Chad"
-           
+			document.getElementById('link').href="../course/index.html"
         }
 		
 function CloseModal() {

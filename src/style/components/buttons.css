@@ -2,8 +2,12 @@ button {
     text-align: center;
     border-radius: 62px;
     cursor: pointer;
+    transition: 300ms ease-out;
 }
-
+button:hover{
+    opacity: 60%;
+    transition: 300ms ease-in;
+}
 .index button {
     color: #FF4081;
     background: none;
@@ -25,6 +29,20 @@ button {
     border: 0;    
 }
 
+.modalbutton{
+    color: #fff;
+    background-color: #419488;
+    padding: 10px 50px; 
+    border: 0;
+}
+
+.modal button{
+    
+    background-color: #C4C4C4;
+    padding: 10px 30px; 
+    border: 0;
+}
+
 footer button {
 	width: 13rem;
     color: #fff;
@@ -40,6 +58,9 @@ footer button {
 	footer button{
 		width: 11rem ;
 	}
+    .modalbutton{
+        margin-top: 10%
+    }
 }
 
 @media (max-width: 480px){
@@ -47,13 +68,7 @@ footer button {
 footer button {
     width: 10rem;
 }
-
+.modalbutton{
+    margin-top: 20%
 }
-
-.modal button {
-    font-size: 18px;
-    background-color: #c4c4c4;
-    padding: 0.625rem 2rem;
-    border: 0;
-
 }
